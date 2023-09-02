@@ -1,0 +1,60 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "cairo@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#cairo",
+      "source": "devbox-search",
+      "version": "1.16.0"
+    },
+    "libffi@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#libffi",
+      "source": "devbox-search",
+      "version": "3.4.4"
+    },
+    "libjpeg8@2.1.5.1": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#libjpeg8",
+      "source": "devbox-search",
+      "version": "2.1.5.1"
+    },
+    "libpng@1.6.39": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#libpng",
+      "source": "devbox-search",
+      "version": "1.6.39"
+    },
+    "libz@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#libz",
+      "source": "devbox-search",
+      "version": "2018-03-31"
+    },
+    "nodejs@18": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#nodejs_18",
+      "source": "devbox-search",
+      "version": "18.17.1"
+    },
+    "pipenv@latest": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#pipenv",
+      "source": "devbox-search",
+      "version": "2023.2.4"
+    },
+    "pngquant@2.17.0": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#pngquant",
+      "source": "devbox-search",
+      "version": "2.17.0"
+    },
+    "python@3.11": {
+      "last_modified": "2023-08-30T00:25:28Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/a63a64b593dcf2fe05f7c5d666eb395950f36bc9#python311",
+      "source": "devbox-search",
+      "version": "3.11.4"
+    }
+  }
+}

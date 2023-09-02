@@ -1,7 +1,18 @@
 #!/usr/bin/env bash
+set -xe
 
-python3 -m venv .venv
-source .venv/bin/activate
-pip3 install -r requirements.txt
+devboxWrapper() {
+  if command -v devbox >> /dev/null; then
+    devbox run -- $*
+  else
+    echo "devbox not installed, running command '$*' directly"
+    $*
+  fi
+}
 
-npm install
+if ! command -v pipenv >> /dev/null; then
+  devboxWrapper pip install --user pipenv
+fi
+
+devboxWrapper npm install
+devboxWrapper pipenv install

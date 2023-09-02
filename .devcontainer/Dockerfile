@@ -3,7 +3,10 @@ FROM gitpod/workspace-full
 
 USER gitpod
 
-# WORKIR /sandbox
-# COPY devbox.json devbox.lock ./
-# TODO: Setup
-RUN curl -fsSL https://get.jetpack.io/devbox | bash -s -- -f
+WORKDIR /sandbox
+COPY devbox.json devbox.lock ./
+RUN curl -fsSL https://get.jetpack.io/devbox | bash -s -- -f \
+   && sudo chown -R gitpod:gitpod /sandbox \
+   && devbox run -- echo "packages installed"
+
+WORKDIR /home/gitpod

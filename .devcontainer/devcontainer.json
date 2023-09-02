@@ -1,15 +1,23 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/universal
 {
-	"name": "Default Linux Universal",
-	"dockerFile": "./Dockerfile",
+	"name": "project-specific devbox setup",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {},
-		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {}
+		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:0": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers/features/git-lfs:1": {}
 	},
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "bash scripts/setup-devenv.sh",
+	"postAttachCommand": {
+		"mkdocs": "pipenv run -- mkdocs serve"
+	},
 
 	// Configure tool-specific properties.
 	// "customizations": {},

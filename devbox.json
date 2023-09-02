@@ -1,0 +1,23 @@
+{
+  "packages": [
+    "nodejs@18",
+    "python@3.11",
+    "pipenv@latest",
+    "pngquant@2.17.0",
+    "libjpeg8@2.1.5.1",
+    "libpng@1.6.39",
+    "libz@latest",
+    "cairo@latest",
+    "libffi@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo 'Welcome to devbox!' > /dev/null"
+    ],
+    "scripts": {
+      "test": [
+        "echo \"Error: no test specified\" && exit 1"
+      ]
+    }
+  }
+}

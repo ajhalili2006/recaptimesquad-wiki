@@ -2,7 +2,7 @@
 
 # Project information, site metadata
 site_name: RecapTime.dev Wiki
-site_url: "https://squad.lorebooks.eu.org"
+site_url: "https://wiki.recaptime.dev"
 site_author: Recap Time Squad and contributors
 site_description: >-
   The squad wiki, consists of both the team handbook, our organizational documents,
@@ -93,8 +93,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
